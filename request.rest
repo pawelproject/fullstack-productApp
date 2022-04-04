@@ -1,0 +1,76 @@
+POST http://localhost:4000/register
+Content-Type:  application/json
+
+{
+    "name": "Kyle",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type:  application/json
+
+{
+    "name":"Kyle",
+    "password": "password"
+}
+
+###
+GET http://localhost:4000/products
+
+
+###
+GET http://localhost:4000/products?id=623b5547fe1ab714f69cc054
+
+
+###
+POST http://localhost:4000/products/create
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkRlJxbTZNNFVWTTRNMkQydkY2LzViLnRud3JJY0xWeEFLOVo2dU1RTUF3YjVGUFFrMjJpUnkiLCJpYXQiOjE2NDg1MDg5NTAsImV4cCI6MTY0ODUxMjU1MH0.8EDBhV3O3bK1t-BCYnydqcEKVRXCqIPiyrJayHVkdEQ
+
+{
+    "title":"czacza",
+    "description": "nowiuski opis"
+}
+
+###
+POST http://localhost:4000/users/signup
+Content-Type:  application/json
+
+{
+    "email":"test2@example.com",
+    "password": "snsvfd123"
+}
+
+###
+POST http://localhost:4000/users/signin
+Content-Type:  application/json
+
+{
+    "email":"test2@example.com",
+    "password": "snsvfd123"
+}
+
+###
+DELETE http://localhost:4000/products/623a484487463ab3bdb31966
+
+
+
+###
+PATCH  http://localhost:4000/products/623b5547fe1ab714f69cc05
+Content-Type:  application/json
+
+{
+    "title":"czacza1",
+    "description": "nowiuski opfdsdfsd sdfsdfs fsdfsd fsdf sdfis"
+}
+
+###
+POST http://localhost:4000/users/token
+Content-Type:  application/json
+
+{
+    "email":"test2@example.com",
+    "password": "snsvfd123"
+}
